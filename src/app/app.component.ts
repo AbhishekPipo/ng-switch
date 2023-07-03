@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-switch';
+  // title = 'ng-switch';
+  selectedOption: string = '';
+
+  setSelectedOption(option: string) {
+    this.selectedOption = option;
+  }
 }
